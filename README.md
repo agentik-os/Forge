@@ -2,7 +2,8 @@
   <img src="https://img.shields.io/badge/version-3.1-blue?style=flat-square" alt="Version"/>
   <img src="https://img.shields.io/badge/license-Proprietary-red?style=flat-square" alt="License"/>
   <img src="https://img.shields.io/badge/claude--code-compatible-green?style=flat-square" alt="Claude Code"/>
-  <a href="#support"><img src="https://img.shields.io/badge/sponsor-support%20FORGE-ff69b4?style=flat-square" alt="Support"/></a>
+  <a href="https://discord.gg/Gexteuyg4C"><img src="https://img.shields.io/badge/Discord-Join%20Community-5865F2?style=flat-square&logo=discord&logoColor=white" alt="Discord"/></a>
+  <a href="#-support--donate"><img src="https://img.shields.io/badge/sponsor-support%20FORGE-ff69b4?style=flat-square" alt="Support"/></a>
 </p>
 
 <p align="center">
@@ -18,6 +19,78 @@
 
 <h3 align="center">Complete Product Companion for Claude Code</h3>
 <p align="center"><em>"From idea to production. Every step matters."</em></p>
+
+---
+
+## 💖 Support & Donate
+
+<p align="center">
+  <strong>Love FORGE? You're awesome! 🎉</strong>
+</p>
+
+<p align="center">
+  Your support means the world to us and keeps this project alive.<br/>
+  Every donation, big or small, helps us build better tools for the community.<br/>
+  <strong>Thank you for being part of this journey! 🙏</strong>
+</p>
+
+<p align="center">
+  <a href="https://paypal.me/garethsimono">
+    <img src="https://img.shields.io/badge/PayPal-Donate-00457C?style=for-the-badge&logo=paypal&logoColor=white" alt="PayPal"/>
+  </a>
+</p>
+
+<p align="center">
+  <sub><strong>PayPal:</strong> simono.gareth@gmail.com</sub>
+</p>
+
+<br/>
+
+<table align="center">
+  <tr>
+    <th>Crypto</th>
+    <th>Network</th>
+    <th>Address</th>
+  </tr>
+  <tr>
+    <td><strong>USDT</strong></td>
+    <td>Arbitrum</td>
+    <td><code>0x8709fd7475780d4caa2c6674b06396c57a0530fa</code></td>
+  </tr>
+  <tr>
+    <td><strong>SOL</strong></td>
+    <td>Solana</td>
+    <td><code>37H9ecXZ2BpWkBEogCcosj6LEBp5uqgBs5fjJgjzNeo7</code></td>
+  </tr>
+  <tr>
+    <td><strong>BTC</strong></td>
+    <td>Bitcoin</td>
+    <td><code>1CVMhkWDBMt5C5WsE8vmY84KSnFCrgPbZL</code></td>
+  </tr>
+</table>
+
+---
+
+## 🌐 Join Our Community
+
+<p align="center">
+  <a href="https://discord.gg/Gexteuyg4C">
+    <img src="https://img.shields.io/badge/Discord-Join%20the%20Agentik%20OS%20Community-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord"/>
+  </a>
+</p>
+
+<p align="center">
+  Connect with other users, get help, share your projects, and stay updated!<br/>
+  We'd love to have you! 💜
+</p>
+
+---
+
+## 🤝 Contributing
+
+**Contributions are welcome and encouraged!** 🎊
+
+Whether it's bug fixes, new features, documentation improvements, or just ideas — we appreciate all contributions. Feel free to open issues and pull requests!
 
 ---
 
@@ -38,7 +111,6 @@
 5. [What FORGE Creates](#what-forge-creates)
 6. [Skill Packs](#skill-packs)
 7. [FAQ](#faq)
-8. [Support](#support)
 
 ---
 
@@ -496,55 +568,9 @@ FORGE runs entirely within Claude Code. Market research uses web searches but yo
 
 ---
 
-## Support
-
-If FORGE helps you ship products faster, consider supporting its development.
-
-<p align="center">
-  <a href="https://paypal.me/garethsimono">
-    <img src="https://img.shields.io/badge/PayPal-Donate-00457C?style=for-the-badge&logo=paypal&logoColor=white" alt="PayPal"/>
-  </a>
-</p>
-
-<p align="center">
-  <sub><strong>PayPal:</strong> simono.gareth@gmail.com</sub>
-</p>
-
-<br/>
-
-<table align="center">
-  <tr>
-    <th>Crypto</th>
-    <th>Network</th>
-    <th>Address</th>
-  </tr>
-  <tr>
-    <td><strong>USDT</strong></td>
-    <td>Arbitrum</td>
-    <td><code>0x8709fd7475780d4caa2c6674b06396c57a0530fa</code></td>
-  </tr>
-  <tr>
-    <td><strong>SOL</strong></td>
-    <td>Solana</td>
-    <td><code>37H9ecXZ2BpWkBEogCcosj6LEBp5uqgBs5fjJgjzNeo7</code></td>
-  </tr>
-  <tr>
-    <td><strong>BTC</strong></td>
-    <td>Bitcoin</td>
-    <td><code>1CVMhkWDBMt5C5WsE8vmY84KSnFCrgPbZL</code></td>
-  </tr>
-</table>
-
-<br/>
-
-<p align="center">
-  <sub>Your support keeps FORGE maintained and improving. Thank you! 🙏</sub>
-</p>
-
----
-
 ## Links
 
+- [Discord Community](https://discord.gg/Gexteuyg4C) - Join us!
 - [Claude Code](https://claude.ai/code) - The AI coding assistant
 - [shadcn/ui](https://ui.shadcn.com) - Component library
 - [Convex](https://convex.dev) - Backend platform
@@ -577,4 +603,8 @@ If FORGE helps you ship products faster, consider supporting its development.
 
 <p align="center">
   <strong>From idea to production. Every step matters.</strong>
+</p>
+
+<p align="center">
+<strong>Star ⭐ this repo if you find it useful!</strong>
 </p>
