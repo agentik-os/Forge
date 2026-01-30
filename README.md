@@ -1,15 +1,29 @@
-# FORGE v3.1 - Complete Product Companion
+<p align="center">
+  <img src="https://img.shields.io/badge/version-3.1-blue?style=flat-square" alt="Version"/>
+  <img src="https://img.shields.io/badge/license-Proprietary-red?style=flat-square" alt="License"/>
+  <img src="https://img.shields.io/badge/claude--code-compatible-green?style=flat-square" alt="Claude Code"/>
+  <a href="#support"><img src="https://img.shields.io/badge/sponsor-support%20FORGE-ff69b4?style=flat-square" alt="Support"/></a>
+</p>
 
-```
+<p align="center">
+  <pre align="center">
 ███████╗ ██████╗ ██████╗  ██████╗ ███████╗
 ██╔════╝██╔═══██╗██╔══██╗██╔════╝ ██╔════╝
 █████╗  ██║   ██║██████╔╝██║  ███╗█████╗
 ██╔══╝  ██║   ██║██╔══██╗██║   ██║██╔══╝
 ██║     ╚██████╔╝██║  ██║╚██████╔╝███████╗
 ╚═╝      ╚═════╝ ╚═╝  ╚═╝ ╚═════╝ ╚══════╝
+  </pre>
+</p>
 
-"From idea to production. Every step matters."
-```
+<h3 align="center">Complete Product Companion for Claude Code</h3>
+<p align="center"><em>"From idea to production. Every step matters."</em></p>
+
+---
+
+> **⚠️ License Notice:** This software is proprietary. Personal use is permitted. Public forks, redistribution, and commercial use require written permission. See [LICENSE](LICENSE).
+
+---
 
 **FORGE** is a project creation agent for [Claude Code](https://claude.ai/code). It guides you through every step: understanding your idea, researching the market, generating a PRD, making technical decisions, and scaffolding a production-ready project.
 
@@ -24,6 +38,7 @@
 5. [What FORGE Creates](#what-forge-creates)
 6. [Skill Packs](#skill-packs)
 7. [FAQ](#faq)
+8. [Support](#support)
 
 ---
 
@@ -70,10 +85,11 @@ chmod +x install.sh
 
 1. **Detects your environment** - Checks for Claude Code, package managers, existing tools
 2. **Creates directories** - `~/.claude/agents/`, `~/.claude/commands/`, `~/.claude/templates/`
-3. **Downloads files**:
-   - `~/.claude/agents/forge.md` - Agent definition
-   - `~/.claude/commands/forge.md` - Command definition
+3. **Offers optional add-ons** - Choose from agent bundles (Starter, Fullstack, SaaS, Mobile)
+4. **Downloads files**:
+   - `~/.claude/commands/forge.md` - Main FORGE command
    - `~/.claude/templates/themes/` - Color theme presets
+   - Selected agents and commands from catalog
 
 ### Verify installation
 
@@ -480,50 +496,60 @@ FORGE runs entirely within Claude Code. Market research uses web searches but yo
 
 ---
 
+## Support
+
+If FORGE helps you ship products faster, consider supporting its development.
+
+<p align="center">
+  <a href="https://paypal.me/garethsimono">
+    <img src="https://img.shields.io/badge/PayPal-Donate-00457C?style=for-the-badge&logo=paypal&logoColor=white" alt="PayPal"/>
+  </a>
+</p>
+
+<p align="center">
+  <sub><strong>PayPal:</strong> simono.gareth@gmail.com</sub>
+</p>
+
+<br/>
+
+<table align="center">
+  <tr>
+    <th>Crypto</th>
+    <th>Network</th>
+    <th>Address</th>
+  </tr>
+  <tr>
+    <td><strong>USDT</strong></td>
+    <td>Arbitrum</td>
+    <td><code>0x8709fd7475780d4caa2c6674b06396c57a0530fa</code></td>
+  </tr>
+  <tr>
+    <td><strong>SOL</strong></td>
+    <td>Solana</td>
+    <td><code>37H9ecXZ2BpWkBEogCcosj6LEBp5uqgBs5fjJgjzNeo7</code></td>
+  </tr>
+  <tr>
+    <td><strong>BTC</strong></td>
+    <td>Bitcoin</td>
+    <td><code>1CVMhkWDBMt5C5WsE8vmY84KSnFCrgPbZL</code></td>
+  </tr>
+</table>
+
+<br/>
+
+<p align="center">
+  <sub>Your support keeps FORGE maintained and improving. Thank you! 🙏</sub>
+</p>
+
+---
+
 ## Links
 
 - [Claude Code](https://claude.ai/code) - The AI coding assistant
 - [shadcn/ui](https://ui.shadcn.com) - Component library
 - [Convex](https://convex.dev) - Backend platform
 - [Clerk](https://clerk.com) - Authentication
-
----
-
-## Support the Project
-
-If FORGE helps you build amazing products, consider supporting its development!
-
-<table>
-  <tr>
-    <td align="center">
-      <img src="https://img.shields.io/badge/PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white" alt="PayPal"/>
-      <br/>
-      <a href="https://paypal.me/garethsimono"><strong>paypal.me/garethsimono</strong></a>
-      <br/>
-      <sub>simono.gareth@gmail.com</sub>
-    </td>
-  </tr>
-</table>
-
-### Crypto Donations
-
-| Currency | Network | Address |
-|:--------:|:-------:|:--------|
-| **USDT** | Arbitrum | `0x8709fd7475780d4caa2c6674b06396c57a0530fa` |
-| **SOL** | Solana | `37H9ecXZ2BpWkBEogCcosj6LEBp5uqgBs5fjJgjzNeo7` |
-| **BTC** | Bitcoin | `1CVMhkWDBMt5C5WsE8vmY84KSnFCrgPbZL` |
-
-<details>
-<summary>Why support FORGE?</summary>
-
-- **Free and open** - Use it for all your projects
-- **Actively maintained** - Regular updates and new features
-- **Community-driven** - Your feedback shapes the roadmap
-- **No tracking** - Your data stays local
-
-Every contribution helps keep this project alive and improving!
-
-</details>
+- [Agentik OS on TAAFT](https://theresanaiforthat.com/@agentik_os/) - More AI tools
 
 ---
 
@@ -531,17 +557,13 @@ Every contribution helps keep this project alive and improving!
 
 **Proprietary License** - see [LICENSE](LICENSE)
 
-You may:
-- View and study the source code
-- Use FORGE for personal, non-commercial projects
-- Create private modifications for personal use
+| Permitted | Not Permitted |
+|-----------|---------------|
+| ✅ View and study source code | ❌ Public forks or redistribution |
+| ✅ Personal, non-commercial use | ❌ Commercial use without permission |
+| ✅ Private modifications | ❌ Sublicensing |
 
-You may NOT:
-- Distribute or publish forks publicly
-- Use for commercial purposes without permission
-- Redistribute the software
-
-For commercial licensing, contact: x@agentik-os.com
+**Commercial licensing:** x@agentik-os.com
 
 ---
 
@@ -555,8 +577,4 @@ For commercial licensing, contact: x@agentik-os.com
 
 <p align="center">
   <strong>From idea to production. Every step matters.</strong>
-  <br/><br/>
-  <a href="https://paypal.me/garethsimono">
-    <img src="https://img.shields.io/badge/Support-FORGE-ff69b4?style=flat-square&logo=heart" alt="Support FORGE"/>
-  </a>
 </p>
