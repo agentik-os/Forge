@@ -1,21 +1,86 @@
-MIT License
+FORGE Proprietary License
+Version 1.0, January 2026
 
-Copyright (c) 2026 Agentik OS
+Copyright (c) 2026 Agentik OS (Gareth Simono)
+All Rights Reserved.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+================================================================================
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+TERMS AND CONDITIONS
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+1. DEFINITIONS
+
+   "Software" refers to FORGE, including all source code, documentation,
+   configuration files, and associated materials in this repository.
+
+   "Personal Use" means use by an individual for non-commercial purposes,
+   including learning, personal projects, and experimentation.
+
+   "Commercial Use" means any use intended for or directed toward commercial
+   advantage or monetary compensation.
+
+2. GRANT OF LICENSE
+
+   Subject to the terms of this License, you are granted a limited,
+   non-exclusive, non-transferable license to:
+
+   a) View and study the source code
+   b) Use the Software for Personal Use only
+   c) Create private modifications for Personal Use only
+
+3. RESTRICTIONS
+
+   You may NOT:
+
+   a) Distribute, publish, or share the Software or any modifications
+   b) Use the Software for Commercial Use without written permission
+   c) Sublicense, sell, rent, or lease the Software
+   d) Remove or alter any copyright notices or this license
+   e) Create derivative works for public distribution
+   f) Use the Software to provide services to third parties for compensation
+
+4. FORKS AND MODIFICATIONS
+
+   If you fork or modify this Software:
+
+   a) Your fork/modifications must remain PRIVATE
+   b) You may NOT publish forks or modifications publicly
+   c) You may NOT distribute modifications to others
+   d) All modifications remain subject to this License
+
+5. CONTRIBUTIONS
+
+   If you wish to contribute improvements:
+
+   a) Contact the copyright holder for contribution guidelines
+   b) Contributions may be accepted at the sole discretion of the copyright holder
+   c) Accepted contributions become property of the copyright holder
+
+6. COMMERCIAL LICENSING
+
+   For Commercial Use or redistribution rights, contact:
+   - Email: x@agentik-os.com
+   - GitHub: https://github.com/agentik-os
+
+7. DISCLAIMER OF WARRANTY
+
+   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+   IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+   FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+
+8. LIMITATION OF LIABILITY
+
+   IN NO EVENT SHALL THE COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES OR
+   OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
+   ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+   DEALINGS IN THE SOFTWARE.
+
+9. TERMINATION
+
+   This License is effective until terminated. Your rights under this License
+   will terminate automatically without notice if you fail to comply with any
+   of its terms.
+
+================================================================================
+
+For questions about licensing: x@agentik-os.com

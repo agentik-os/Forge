@@ -489,9 +489,59 @@ FORGE runs entirely within Claude Code. Market research uses web searches but yo
 
 ---
 
+## Support the Project
+
+If FORGE helps you build amazing products, consider supporting its development!
+
+<table>
+  <tr>
+    <td align="center">
+      <img src="https://img.shields.io/badge/PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white" alt="PayPal"/>
+      <br/>
+      <a href="https://paypal.me/garethsimono"><strong>paypal.me/garethsimono</strong></a>
+      <br/>
+      <sub>simono.gareth@gmail.com</sub>
+    </td>
+  </tr>
+</table>
+
+### Crypto Donations
+
+| Currency | Network | Address |
+|:--------:|:-------:|:--------|
+| **USDT** | Arbitrum | `0x8709fd7475780d4caa2c6674b06396c57a0530fa` |
+| **SOL** | Solana | `37H9ecXZ2BpWkBEogCcosj6LEBp5uqgBs5fjJgjzNeo7` |
+| **BTC** | Bitcoin | `1CVMhkWDBMt5C5WsE8vmY84KSnFCrgPbZL` |
+
+<details>
+<summary>Why support FORGE?</summary>
+
+- **Free and open** - Use it for all your projects
+- **Actively maintained** - Regular updates and new features
+- **Community-driven** - Your feedback shapes the roadmap
+- **No tracking** - Your data stays local
+
+Every contribution helps keep this project alive and improving!
+
+</details>
+
+---
+
 ## License
 
-MIT License - see [LICENSE](LICENSE)
+**Proprietary License** - see [LICENSE](LICENSE)
+
+You may:
+- View and study the source code
+- Use FORGE for personal, non-commercial projects
+- Create private modifications for personal use
+
+You may NOT:
+- Distribute or publish forks publicly
+- Use for commercial purposes without permission
+- Redistribute the software
+
+For commercial licensing, contact: x@agentik-os.com
 
 ---
 
@@ -505,4 +555,8 @@ MIT License - see [LICENSE](LICENSE)
 
 <p align="center">
   <strong>From idea to production. Every step matters.</strong>
+  <br/><br/>
+  <a href="https://paypal.me/garethsimono">
+    <img src="https://img.shields.io/badge/Support-FORGE-ff69b4?style=flat-square&logo=heart" alt="Support FORGE"/>
+  </a>
 </p>
