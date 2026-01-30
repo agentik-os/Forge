@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # ═══════════════════════════════════════════════════════════════════════════════
-# FORGE v3.0 - Installation Script
+# FORGE v3.1 - Installation Script
 # Complete Product Companion for Claude Code
 # ═══════════════════════════════════════════════════════════════════════════════
 
@@ -34,7 +34,7 @@ print_banner() {
     echo "██║     ╚██████╔╝██║  ██║╚██████╔╝███████╗"
     echo "╚═╝      ╚═════╝ ╚═╝  ╚═╝ ╚═════╝ ╚══════╝"
     echo -e "${NC}"
-    echo -e "${BOLD}FORGE v3.0 - Complete Product Companion${NC}"
+    echo -e "${BOLD}FORGE v3.1 - Complete Product Companion${NC}"
     echo -e "${YELLOW}\"From idea to production. Every step matters.\"${NC}"
     echo ""
 }
@@ -195,7 +195,7 @@ download_file() {
 }
 
 install_forge() {
-    log_info "Installing FORGE v3.0..."
+    log_info "Installing FORGE v3.1..."
     echo ""
 
     # Download agent definition
@@ -225,7 +225,7 @@ install_forge() {
 print_summary() {
     echo ""
     echo -e "${GREEN}═══════════════════════════════════════════════════════════════════════════════${NC}"
-    echo -e "${GREEN}  ✅ FORGE v3.0 INSTALLED SUCCESSFULLY${NC}"
+    echo -e "${GREEN}  ✅ FORGE v3.1 INSTALLED SUCCESSFULLY${NC}"
     echo -e "${GREEN}═══════════════════════════════════════════════════════════════════════════════${NC}"
     echo ""
 
@@ -294,7 +294,7 @@ main() {
     print_banner
     detect_environment
 
-    echo -e "${BOLD}Ready to install FORGE v3.0?${NC}"
+    echo -e "${BOLD}Ready to install FORGE v3.1?${NC}"
     echo ""
     read -p "Press Enter to continue or Ctrl+C to cancel..."
     echo ""
