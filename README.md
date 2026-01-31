@@ -202,6 +202,7 @@ FORGE follows a 12-step workflow:
 │                                                             │
 │  5. TECHNICAL DECISIONS                                     │
 │     → Framework, styling, backend, auth, payments...        │
+│     → External integrations (Composio for 500+ services)    │
 │     → EVERY choice is explicit, NOTHING assumed             │
 │                                                             │
 │  6. DESIGN                                                  │
@@ -342,6 +343,7 @@ FORGE asks about EVERY technical choice:
 | Backend | Convex, Supabase, Firebase, Prisma |
 | Auth | Clerk, Better Auth, Auth.js |
 | Payments | Stripe, LemonSqueezy, Paddle |
+| External Integrations | Composio (500+ apps: Instagram, Gmail, Slack, etc.) |
 | Project location | ~/projects/, ~/work/, custom |
 | Project name | lowercase-with-dashes |
 | Port | Auto-suggested based on existing projects |
@@ -526,6 +528,7 @@ FORGE v3.1 includes a Skill Packs system that recommends enhancement modules bas
 | **Marketing** | page-cro, marketing-ideas, marketing-psychology, launch-strategy, social-content, email-sequence | SaaS, Landing |
 | **Convex** | convex, convex-best-practices, convex-realtime | Projects using Convex |
 | **Stripe** | stripe-best-practices, pricing-strategy | Projects using Stripe |
+| **Integrations** | Composio (500+ apps with managed OAuth) | SaaS, Web, Automation |
 | **Mobile** | expo-tailwind-setup, upgrading-expo | Mobile apps |
 | **Analytics** | analytics-tracking, data-storytelling | SaaS, Landing |
 | **Video** | remotion, remotion-best-practices | Video projects |
@@ -537,6 +540,65 @@ FORGE v3.1 includes a Skill Packs system that recommends enhancement modules bas
 3. Shows what's already installed vs. what's missing
 4. You choose which packs to complete
 5. Only missing skills are installed - **never reinstalls existing ones**
+
+---
+
+## External Integrations (Composio)
+
+FORGE v3.1 includes optional **Composio** integration for connecting your app to 500+ external services with managed OAuth authentication.
+
+### What is Composio?
+
+[Composio](https://composio.dev) is a platform that handles OAuth authentication and API integrations for AI agents and apps. Instead of building OAuth flows from scratch, Composio:
+
+- **Manages tokens** - Handles refresh, storage, and security (SOC 2 compliant)
+- **Provides 500+ connectors** - Pre-built integrations for popular services
+- **Works with any framework** - Framework agnostic, MCP compatible
+
+### Supported Services
+
+| Category | Services |
+|----------|----------|
+| **Social Media** | Instagram, Twitter/X, TikTok, LinkedIn, Facebook |
+| **Email** | Gmail, Outlook, SendGrid |
+| **Productivity** | Slack, Notion, Google Calendar, Trello, Asana |
+| **Developer** | GitHub, GitLab, Linear, Jira |
+| **CRM** | HubSpot, Salesforce, Pipedrive |
+| **Storage** | Google Drive, Dropbox, OneDrive |
+| **Finance** | Stripe, QuickBooks, Xero |
+| **And more...** | 500+ total integrations |
+
+### When to Use Composio
+
+Choose "Yes" for integrations when your app needs to:
+
+- Post to Instagram/Twitter on behalf of users
+- Send emails via user's Gmail account
+- Create GitHub issues automatically
+- Sync with user's Notion databases
+- Schedule events in user's calendar
+- Send Slack messages in user's workspace
+
+### What FORGE Creates
+
+When you enable integrations, FORGE sets up:
+
+```
+src/
+├── lib/
+│   └── composio.ts    # Composio client configuration
+└── components/
+    └── integrations/
+        └── connect-app.tsx  # OAuth connection UI
+```
+
+Plus environment variables and documentation in your CLAUDE.md.
+
+### Learn More
+
+- [Composio Documentation](https://composio.dev/docs)
+- [Composio MCP Server](https://mcp.composio.dev)
+- [Available Integrations](https://composio.dev/tools)
 
 ---
 
@@ -575,6 +637,7 @@ FORGE runs entirely within Claude Code. Market research uses web searches but yo
 - [shadcn/ui](https://ui.shadcn.com) - Component library
 - [Convex](https://convex.dev) - Backend platform
 - [Clerk](https://clerk.com) - Authentication
+- [Composio](https://composio.dev) - External integrations (500+ apps with managed OAuth)
 - [Agentik OS on TAAFT](https://theresanaiforthat.com/@agentik_os/) - More AI tools
 
 ---

@@ -44,6 +44,10 @@ which bun npm yarn pnpm 2>/dev/null
 
 # Check for existing projects structure
 ls -la ~/VibeCoding/ 2>/dev/null || ls -la ~/projects/ 2>/dev/null || ls -la ~/ 2>/dev/null
+
+# Check for Composio (external integrations platform)
+which composio 2>/dev/null || npm list -g composio-core 2>/dev/null
+test -f ~/.composio/config.json && echo "composio: configured"
 ```
 
 ### 0.2 Build Environment Report
@@ -62,6 +66,7 @@ ls -la ~/VibeCoding/ 2>/dev/null || ls -la ~/projects/ 2>/dev/null || ls -la ~/ 
 | Sentinel | ✅ Installed | Continuous testing |
 | BMAD | ✅ Installed | Agile workflows |
 | Context7 | ✅ Available | Latest docs fetching |
+| Composio | ✅ Available | 500+ external integrations (OAuth managed) |
 
 ## 📦 PACKAGE MANAGERS
 
@@ -693,7 +698,145 @@ options:
     description: "Skip payments for now"
 ```
 
-### 5.10 If Mobile - Platform & Framework
+### 5.10 External Integrations (Composio)
+
+**Does your app need to connect to external services on behalf of users?**
+
+```yaml
+question: "Does your app need to connect to external services (like Instagram, Gmail, Slack) on behalf of users?"
+header: "Integrations"
+options:
+  - label: "Yes - users will connect their accounts"
+    description: "I'll set up Composio for managed OAuth (500+ apps)"
+  - label: "No - my app doesn't need external integrations"
+    description: "Skip Composio setup"
+```
+
+**If yes, ask which integrations:**
+
+```yaml
+question: "Which external services do you need? (select all that apply)"
+header: "Services"
+multiSelect: true
+options:
+  - label: "Social Media (Instagram, Twitter/X, TikTok, LinkedIn)"
+    description: "Post content, read feeds, manage accounts"
+  - label: "Email (Gmail, Outlook)"
+    description: "Send emails, read inbox, manage contacts"
+  - label: "Productivity (Slack, Notion, Google Calendar)"
+    description: "Send messages, manage docs, schedule events"
+  - label: "Developer (GitHub, GitLab, Linear)"
+    description: "Create issues, manage repos, track projects"
+  - label: "CRM (HubSpot, Salesforce)"
+    description: "Manage contacts, deals, automation"
+  - label: "Other / I'll configure later"
+    description: "Browse 500+ available integrations"
+```
+
+**If integrations selected, FORGE will:**
+
+1. **Install Composio SDK:**
+   ```bash
+   bun add composio-core
+   ```
+
+2. **Create integration config file:**
+   ```typescript
+   // src/lib/composio.ts
+   import { Composio } from "composio-core";
+
+   export const composio = new Composio({
+     apiKey: process.env.COMPOSIO_API_KEY,
+   });
+
+   // Example: Get connected apps for a user
+   export async function getUserConnections(userId: string) {
+     return composio.getConnectedAccounts({
+       entityId: userId,
+     });
+   }
+
+   // Example: Trigger an action (e.g., send email, post to Instagram)
+   export async function executeAction(
+     actionName: string,
+     params: Record<string, any>,
+     entityId: string
+   ) {
+     return composio.executeAction({
+       action: actionName,
+       params,
+       entityId,
+     });
+   }
+   ```
+
+3. **Add environment variables:**
+   ```bash
+   # .env.local
+   COMPOSIO_API_KEY=your_composio_api_key
+
+   # .env.example
+   COMPOSIO_API_KEY=  # Get from https://app.composio.dev
+   ```
+
+4. **Create connection UI component (optional):**
+   ```tsx
+   // src/components/integrations/connect-app.tsx
+   "use client";
+
+   import { useState } from "react";
+   import { Button } from "@/components/ui/button";
+
+   interface ConnectAppProps {
+     appName: string;
+     onConnect: (appName: string) => Promise<string>;
+   }
+
+   export function ConnectApp({ appName, onConnect }: ConnectAppProps) {
+     const [isLoading, setIsLoading] = useState(false);
+
+     async function handleConnect() {
+       setIsLoading(true);
+       try {
+         const authUrl = await onConnect(appName);
+         window.open(authUrl, "_blank", "width=600,height=700");
+       } finally {
+         setIsLoading(false);
+       }
+     }
+
+     return (
+       <Button onClick={handleConnect} disabled={isLoading}>
+         {isLoading ? "Connecting..." : `Connect ${appName}`}
+       </Button>
+     );
+   }
+   ```
+
+5. **Add to CLAUDE.md:**
+   ```markdown
+   ## External Integrations (Composio)
+
+   This project uses Composio for external service integrations.
+
+   **Connected Services:** [list of selected services]
+
+   ### Setup
+   1. Get API key from https://app.composio.dev
+   2. Add to .env.local: COMPOSIO_API_KEY=your_key
+   3. Run: bunx composio login (to connect services)
+
+   ### Available Actions
+   - List all: bunx composio actions
+   - Connect app: bunx composio add <app_name>
+   - See connections: bunx composio connections
+
+   ### Documentation
+   - https://composio.dev/docs
+   - MCP Server: https://mcp.composio.dev
+   ```
+
+### 5.11 If Mobile - Platform & Framework
 
 ```yaml
 question: "Which mobile platforms?"
@@ -721,7 +864,7 @@ options:
     description: "Platform-specific, best performance"
 ```
 
-### 5.11 Web3 (if applicable)
+### 5.12 Web3 (if applicable)
 
 ```yaml
 question: "Does this project involve blockchain/crypto?"
@@ -739,7 +882,7 @@ options:
     description: "Traditional auth + optional wallet"
 ```
 
-### 5.12 If Web3 - Chain Selection
+### 5.13 If Web3 - Chain Selection
 
 ```yaml
 question: "Which blockchain(s)?"
@@ -760,7 +903,7 @@ options:
     description: "Different ecosystem, very fast"
 ```
 
-### 5.13 Project Location
+### 5.14 Project Location
 
 ```yaml
 question: "Where should I create this project?"
@@ -780,11 +923,11 @@ options:
 
 **If custom path:** Ask for the full path.
 
-### 5.14 Project Name
+### 5.15 Project Name
 
 **Ask:** "What should we call this project? (lowercase, no spaces - e.g., 'my-awesome-app')"
 
-### 5.15 Port Assignment (for VPS)
+### 5.16 Port Assignment (for VPS)
 
 **Check existing ports and suggest next available:**
 

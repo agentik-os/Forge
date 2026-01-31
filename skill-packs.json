@@ -310,16 +310,56 @@
           "source": "builtin"
         }
       ]
+    },
+
+    "integrations": {
+      "name": "Integrations Pack",
+      "description": "Connect your app to 500+ external services (Gmail, Instagram, Slack, GitHub, Notion, etc.) with managed OAuth authentication via Composio",
+      "recommended_for": ["saas", "web", "automation"],
+      "condition": "integrations === true",
+      "tools": [
+        {
+          "name": "composio",
+          "description": "Connect to 500+ apps with managed OAuth - Gmail, Instagram, Slack, GitHub, Notion, Calendar, and more",
+          "source": "npm:composio-core",
+          "docs": "https://composio.dev/docs"
+        }
+      ],
+      "mcp_servers": [
+        {
+          "name": "composio-mcp",
+          "description": "MCP server for Composio integrations - enables AI agents to use external services",
+          "source": "npm:@composio/mcp",
+          "docs": "https://mcp.composio.dev"
+        }
+      ],
+      "features": [
+        "Managed OAuth authentication (no token refresh headaches)",
+        "500+ pre-built connectors (Gmail, Instagram, Slack, GitHub, Notion, etc.)",
+        "SOC 2 compliant credential storage",
+        "MCP Gateway for AI agent tool discovery",
+        "Framework agnostic (works with any AI framework)"
+      ],
+      "use_cases": [
+        "Post to Instagram/Twitter on behalf of users",
+        "Send emails via Gmail",
+        "Create GitHub issues automatically",
+        "Sync with Notion databases",
+        "Schedule calendar events",
+        "Send Slack notifications",
+        "Automate CRM updates"
+      ]
     }
   },
 
   "recommendations": {
-    "saas": ["seo", "testing", "design", "performance", "marketing", "development"],
+    "saas": ["seo", "testing", "design", "performance", "marketing", "integrations", "development"],
     "landing": ["seo", "design", "performance", "marketing"],
-    "web": ["seo", "testing", "design", "performance", "development"],
+    "web": ["seo", "testing", "design", "performance", "integrations", "development"],
     "mobile": ["testing", "design", "mobile", "development"],
-    "api": ["testing", "development"],
+    "api": ["testing", "integrations", "development"],
     "desktop": ["testing", "design", "development"],
-    "web3": ["testing", "design", "development"]
+    "web3": ["testing", "design", "development"],
+    "automation": ["testing", "integrations", "development"]
   }
 }

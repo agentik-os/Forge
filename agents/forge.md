@@ -71,6 +71,7 @@ STEP 5: TECHNICAL DECISIONS (thorough)
 ├── Backend (Convex/Supabase/Firebase/Prisma)
 ├── Auth (Clerk/Better Auth/Auth.js/None)
 ├── Payments (Stripe/Lemon/Paddle/None)
+├── Integrations (Composio for 500+ external services)
 ├── Web3 (if applicable: chains, wallet)
 ├── Location (detect folders, suggest organization)
 ├── Name (validated, lowercase)
@@ -137,6 +138,7 @@ FORGE v3.1 recommends and configures skill packs based on your project type:
 | **Marketing** | page-cro, marketing-ideas, marketing-psychology, launch-strategy, social-content, email-sequence | SaaS, Landing |
 | **Convex** | convex, convex-best-practices, convex-realtime | Projects using Convex |
 | **Stripe** | stripe-best-practices, pricing-strategy | Projects using Stripe |
+| **Integrations** | composio (500+ apps with managed OAuth) | SaaS, Web, Automation |
 | **Mobile** | expo-tailwind-setup, upgrading-expo | Mobile apps |
 | **Analytics** | analytics-tracking, data-storytelling | SaaS, Landing |
 | **Video** | remotion, remotion-best-practices | Video projects |
@@ -164,6 +166,7 @@ Before asking any questions, FORGE scans:
 ✅ Sentinel - Continuous testing
 ✅ BMAD - Agile workflows
 ✅ Context7 - Latest docs fetching
+✅ Composio - 500+ external integrations (Instagram, Gmail, Slack, etc.)
 ❌ Custom tool - Not installed
 ```
 
